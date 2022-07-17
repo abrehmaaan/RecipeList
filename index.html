@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header">
+
+        </div>
+        <div data-role="main">
+            <h1>Add Recipe</h1>
+            <form>
+                <div class="ui-field-contain">
+                <label for="name">Dish Name:</label>
+                <input type="text" name="name" id="name">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="id1">Ingredient 1:</label>
+                    <input type="text" name="id1" id="id1" class="ings">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="id2">Ingredient 2:</label>
+                    <input type="text" name="id2" id="id2" class="ings">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="id3"> Ingredient 3:</label>
+                    <input type="text" name="id3" id="id3" class="ings">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="id4">Ingredient 4:</label>
+                    <input type="text" name="id4" id="id4" class="ings">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="id5">Ingredient 5:</label>
+                    <input type="text" name="id5" id="id5" class="ings">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="id6">Ingredient 6:</label>
+                    <input type="text" name="id6" id="id6" class="ings">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="id7">Ingredient 7:</label>
+                    <input type="text" name="id7" id="id7" class="ings">
+                </div>
+                <div class="ui-field-contain">
+                    <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                            <legend>Type:</legend>
+                                <input type="radio" name="radio-choice-b" id="radio-choice-d" value="Desert" checked="checked">
+                                <label for="radio-choice-d">Desert</label>
+                                <input type="radio" name="radio-choice-b" id="radio-choice-s" value="Savoury">
+                                <label for="radio-choice-s">Savoury</label>
+                    </fieldset>
+                </div>
+                <div class="ui-field-contain">
+                    <label for="description">Description:</label>
+                    <textarea cols="40" rows="8" name="textarea" id="description"></textarea>
+                </div>
+                <div class="ui-field-contain">
+                    <label for="calories">Calories:</label>
+                    <input type="number" name="number" pattern="[0-9]+" id="calories">
+                </div>
+                <!-- <button class="ui-shadow ui-btn ui-corner-all" id="done">Done</button> -->
+                <a href="#" class="ui-shadow ui-btn ui-corner-all" id="done">Done</a>
+            </form>
+            <h1>Recipes</h1>
+            <table data-role="table" id="table-column-toggle" data-mode="columntoggle" class="ui-responsive table-stroke">
+                <thead>
+                    <tr>
+                        <th data-priority="2">S.No.</th>
+                        <th>Dish Name</th>
+                        <th data-priority="3">Ingredients</th>
+                        <th data-priority="1">Type</th>
+                        <th data-priority="5">Calories</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <br><br>
+            <a href="#" class="ui-btn ui-btn-inline" id="delAll">Delete All</a>
+        </div>
+        <div data-role="footer">
+
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
